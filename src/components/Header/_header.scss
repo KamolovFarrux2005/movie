@@ -1,0 +1,94 @@
+.header {
+    display: flex;
+    align-items: center;
+    color: var(--light);
+    height: 10vh;
+    background-image: linear-gradient(to right, var(--medium), var(--black));
+    padding: 0 50px;
+
+    &--dark {
+        background-image: linear-gradient(to right, var(--black), var(--black));
+    }
+
+    
+    & > a {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+        color: var(--light);
+    }
+
+    .form {
+        display: flex;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+
+        &--active {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        &__input {
+            position: relative;
+            background: #525252;
+            border-radius: 8px;
+            padding: 0.8rem 1.8rem;
+            width: 17rem;
+            left: 378px;
+            color: var(--light);
+            opacity: 0.5;
+        }
+
+        &__btn {
+            position: absolute;
+            right: 283px;
+            top: 20px;
+            background: #FED530;
+            border-radius: 8px;
+            padding: 0.45rem 0.5rem;
+        }
+    }
+
+    &__search {
+        margin-left: auto;
+        margin-right: 3rem;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__right {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-right: 5rem;
+        z-index: 2;
+
+        .account {
+            display: flex;
+            align-items: center;
+
+            span {
+                margin-left: 1rem;
+            }
+        }
+
+        .log-out {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            width: 10rem;
+            border-radius: 0.8rem;
+            padding: 8px;
+            bottom: -40px;
+            left: 60px;
+            background: var(--light);
+            cursor: pointer;
+
+            span {
+                color: var(--black);
+                margin-left: 5px;
+            }
+        }
+    }
+}

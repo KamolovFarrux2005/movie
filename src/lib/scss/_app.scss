@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+:root {
+    --black: #000000;
+    --dark: #1E1E1E;
+    --medium: #3D3D3D;
+    --title: #2E2E2E;
+    --body: #808080;
+    --field: #CCCCCC;
+    --light: #ffffff;
+    --gold: #FED530;
+    --name: #E6E6E6;
+    --disable: #EDF8F4;
+}
+
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--light);
+}
+
+.app {
+    background-image: linear-gradient(to right, var(--medium), var(--black));
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+
+.unfound {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 24px;
+
+    span {
+        color: crimson;
+    }
+}

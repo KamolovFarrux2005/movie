@@ -1,0 +1,161 @@
+.videoplayer{
+    min-height: 100vh;
+    max-height: fit-content;
+    background: rgb(46,45,45);
+    background: linear-gradient(90deg, rgba(46,45,45,1) 0%, rgba(38,38,38,1) 10%, rgba(1,0,3,1) 100%, rgba(0,212,255,1) 100%);
+    color: white;
+    z-index: -1;
+    padding-bottom: 90px;
+    padding-top: 50px;
+}
+.video-box{
+    width: 100%;
+
+}
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    margin: auto;
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 10px;
+    &__controls{
+        position: absolute;
+        flex-direction: column;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+        &__playPause{
+            // margin-top: auto;
+        }
+        &__toolbar{
+            width: 100%;
+            position: absolute;
+            z-index: 4;
+            // margin-top: auto;
+            width: 100%;
+            bottom: 20px;
+            // align-self: flex-end;
+        }
+
+        .toolbar{
+            padding: 0 5px;
+            &__seekbar{
+                width: 100%;
+                margin: 0;
+                height: fit-content;
+                position: relative;
+                display: flex;
+                justify-content:center;
+                flex-direction: column;
+                
+                &__range{
+                    z-index: -1;
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    background-color: rgb(156, 156, 156);
+                    
+                    &__inner{
+                        width: 50%;
+                        height: 100%;
+                        background-color: red;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 0 4px 4px 0;
+                        &::after{
+                            content: "";
+                            width: 10px;
+                            height: 10px;
+                            background-color: inherit;
+                            border-radius: 50%;
+                            position: absolute;
+                            right: 0;
+                            transform: translateX(50%);
+                            // top: 0;
+                            opacity: 0;
+                            transition: opacity .2s ease-in;
+                        }
+                    }
+                }
+
+                &__input{
+                    opacity: 0;
+                    width: 100%;
+                    margin: 0;
+                    &:hover{
+                        cursor: pointer;
+                    }
+
+                    &:hover ~ .toolbar__seekbar__range {
+                        background-color: rgb(228, 228, 228);
+                    }
+                    &:hover ~ .toolbar__seekbar__range > .toolbar__seekbar__range__inner:after {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &__buttons{
+                &__volume{
+                    display: flex;
+                    align-items: center;
+
+                    
+                }
+
+                .volume{
+                    &__slider{
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        margin-left: 5px;
+                        width: 80px;
+                        &__range{
+                            border-radius: 5px;
+                            position: absolute;
+                            height: 3px ;
+                            background-color: rgb(105, 105, 105);
+                            z-index: 5;
+                            width: 100%;
+                            &__inner{
+                                width: 10%;
+                                border-radius: inherit;
+                                height: 100%;
+                                position: relative;
+                                background-color:white ;
+                                display: flex;
+                                align-items: center;
+
+                                &:after{
+                                    content: "";
+                                    width: 9px;
+                                    height: 9px;
+                                    background-color: inherit;
+                                    position: absolute;
+                                    right:0;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                        &__input{
+                            width:100%;
+                            position: relative;
+                            z-index: 10;
+                            margin: 0;
+                            opacity: 0;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

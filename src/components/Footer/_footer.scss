@@ -1,0 +1,111 @@
+.footer {
+    display: flex;
+    
+    &__right {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-left: 50px;
+        width: 40%;
+        background: var(--medium);
+
+        h2 {
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 88px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 32px;
+            padding-right: 9rem;
+            margin-top: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        span {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        form {
+            position: relative;
+            margin-top: 1.8rem;
+
+            input {
+                background: #525252;
+                border-radius: 8px;
+                padding: 1rem;
+                width: 262px;
+                color: var(--light);
+            }
+
+            button {
+                position: absolute;
+                background-color: var(--gold);
+                border-radius: 8px;
+                padding: 0.45rem;
+                right: 245px;
+                top: 4px;
+            }
+        }
+    }
+
+    &__left {
+        padding-top: 6rem;
+        width: 60%;
+        background-color: var(--title);
+    }
+
+    &__nav {
+        display: flex;
+
+        .nav2 {
+            margin-left: 5rem;
+        }
+
+        .nav {
+            display: flex;
+            margin-left: 7rem;
+            &__ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 3rem;
+            }
+
+            &__item {
+                margin-top: 2rem;
+            }
+
+            &__link {
+                color: var(--name);
+                &--active {
+                    color: var(--light);
+                }
+            }
+        
+        }
+    }
+    
+    &__about {
+        margin-top: 10rem;
+        display: flex;
+        align-items: center;
+
+        span {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 24px;
+            margin-left: 8px;
+        }
+
+        img {
+            margin-left: 3rem;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+}

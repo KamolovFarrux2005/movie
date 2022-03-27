@@ -1,0 +1,80 @@
+.box {
+  position: relative;
+  display: flex;
+  width: 100%;
+  
+  .second {
+    left: 490px;
+  }
+
+  .third {
+    left: 930px;
+  }
+  &__first {
+    position: absolute;
+    width: 400px;
+    height: 170px;
+    background-color: black;
+    left: 50px;
+    top: -80px;
+    z-index: 10;
+
+    display: flex;
+
+    .left {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--primary);
+
+      img {
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+      }
+
+      .poster {
+        position: absolute;
+        width: 40%;
+        height: 100%;
+      }
+    }
+
+    .right {
+      width: 60%;
+      background: var(--dark);
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      .time {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 16px;
+          height: 16px;
+        }
+
+        span {
+          margin-left: 5px;
+        }
+
+        .calendar {
+          margin-left: 5px;
+          font-size: 12px;
+          line-height: 24px;
+          color: var(--field);
+        }
+      }
+    }
+  }
+}

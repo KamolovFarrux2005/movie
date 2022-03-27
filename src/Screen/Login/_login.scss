@@ -1,0 +1,93 @@
+.login {
+    background: linear-gradient(to right, var(--gold), var(--black));
+    color: var(--light);
+    height: 100vh;
+    padding: 0 50px;
+    display: flex;
+    
+
+    &__left {
+        width: 45%;
+        margin-top: 10rem;
+
+        p {
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 120%;
+            margin-left: 3rem;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 76px;
+            line-height: 120%;
+            margin-left: 3rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 7rem;
+            padding-right: 3rem;
+
+            input {
+                width: 100%;
+                height: 3.7rem;
+                padding: 0 1.2rem;
+                font-size: 14px;
+                border-radius: 61px;
+                margin-top: 2rem;
+
+                &::placeholder {
+                    padding-left: 2rem;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: rgba(0, 0, 0, 0.4);
+                }
+            }
+
+            button {
+                margin-top: 3rem;
+                color: var(--light);
+                background: var(--gold);
+                padding: 0.8rem 2.5rem;
+                border-radius: 2rem;
+
+                &:active {
+                    color: var(--title);
+                }
+
+                &:hover {
+                    color: var(--title);
+                }
+            }
+        }
+    }
+
+    &__right {
+        width: 55%;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background: url(../../assets/img/Ellipse2.png)no-repeat;
+            background-size: 100% 100%;
+
+            width: 600px;
+            height: 35%;
+            right: -100px;
+            top: 0;
+            z-index: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
