@@ -52,7 +52,7 @@ const Header = () => {
         <div className="header__right">
           <div className="account">
             <img src={avatar} alt="" />
-            <span>John Glich</span>
+            <span>Kamalov</span>
           </div>
           <button onClick={hanldeLogOut} value="back" className="log-out">
             <img src={exit} alt="" />

@@ -32,13 +32,13 @@ const Login = () => {
         if (returnUrl) {
           navigate(`${returnUrl.pathname} ${returnUrl.search}`, {
             state: {
-              message: "success logged in",
+              message: "success",
             },
           });
         } else {
           navigate("/", {
             state: {
-              message: "success logged in",
+              message: "success",
             },
           });
         }

@@ -20,9 +20,7 @@ const ContextMovies = ({children}) => {
     return (
         <MovieContext.Provider value={{title, setTitle, movies, setPage, setType, type, loading}}>
             <MovieContext.Consumer>
-                {
-                    () => children
-                }
+                {() => children}
             </MovieContext.Consumer>
         </MovieContext.Provider>
     );

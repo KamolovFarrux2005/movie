@@ -8,11 +8,11 @@ const HomeVideo = ({ movies }) => {
   if (!movie) {
     return <></>;
   }
-  console.log("movie", movie);
+  
 
   return (
     <div className="home">
-      <img className="poster" src={movie[1].Poster} alt="" />
+      <img className="poster" src={movie[7].Poster} alt="" />
       <div className="home__top">
         <div className="home__blog">
           <Link to="/singleMovie">
@@ -24,20 +24,18 @@ const HomeVideo = ({ movies }) => {
           <h2 className="title">The Legend of Sunrise</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
+            eiusmod tempor 
           </p>
-
           <span>Genre : Adventure</span>
-          <span>Duration : 2 hr 45 mins</span>
-          <span>Ratings : 4.5</span>
+          <span>Duration : 1 hr 23 mins</span>
+          <span>Ratings : 3.2</span>
         </div>
       </div>
 
       <h2>Trailers</h2>
 
       <div className="home__bottom">
-        {movie?.slice(1, 5).map((data, index) => {
+        {movie?.slice(4, 8).map((data, index) => {
           return (
             <div className="box">
               <img className="poster" src={data.Poster} alt="" />

@@ -67,28 +67,29 @@
         .account {
             display: flex;
             align-items: center;
-
             span {
                 margin-left: 1rem;
             }
         }
-
         .log-out {
             position: absolute;
-            display: flex;
+            display: none;
             align-items: center;
             width: 10rem;
             border-radius: 0.8rem;
             padding: 8px;
-            bottom: -40px;
+            bottom: -20px;
             left: 60px;
             background: var(--light);
             cursor: pointer;
-
             span {
                 color: var(--black);
                 margin-left: 5px;
             }
         }
+        .account:hover ~ .log-out{
+            display: block
+        }
+       
     }
 }

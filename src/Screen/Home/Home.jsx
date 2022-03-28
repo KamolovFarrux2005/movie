@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import HomeVideo from '../../components/HomeVideo/HomeVideo';
+import HomeVideos from '../../components/HomeVideo/HomeVideo';
 import Moviecard from '../../components/MovieCard/MovieCard';
 import BigPlayer from '../../components/BigPlayer/BigPlayer'
 import Box from '../../components/Box/Box'
@@ -16,7 +16,7 @@ const Home = () => {
     
     return (
         <div>
-            <HomeVideo movies={movies.Search} />
+            <HomeVideos movies={movies.Search} />
             <Moviecard movies={movies.Search} title={title} type={type}/>
             <BigPlayer movies={movies.Search}/>
             <Box movies={movies.Search} />

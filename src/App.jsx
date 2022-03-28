@@ -1,14 +1,15 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import "./lib/scss/_app.scss";
-import NoAuthlayout from "./Layout/NoAuthLayOut";
+import NoAuthlayout from './Layout/NoAuthenticationLayout'
 import Login from "./Screen/Login/Login";
 import ContextMovies from "./Context/ContextMovies";
 import Home from "./Screen/Home/Home";
-import ProtectedRoute from "./Routes/ProtectedRoute";
 import SinglePage from "./Screen/SinglePage/SinglePage";
-import CategoriesPage from "./Screen/Categories/Categories";
-import SingleCategory from "./Screen/SingleCatefory/SingleCatefory";
 import Header from "./components/Header/Header";
+import CategoriesPage from "./Screen/Categories/Categories";
+import SingleCategory from "./Screen/SingleCategory/SingleCategory";
+import ProtectedRoute from "./Routes/ProtectedRoute";
+
 
 function App() {
   return (
